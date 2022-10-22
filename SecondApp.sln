@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondApp", "SecondApp\SecondApp.csproj", "{F7B6A0C1-0BC2-47D1-9239-437C2BB627DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondApp", "SecondApp\SecondApp.csproj", "{F7B6A0C1-0BC2-47D1-9239-437C2BB627DF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HelloWorldSetupp", "HelloWorldSetupp\HelloWorldSetupp.vdproj", "{30D66099-8E75-4484-8754-720C00C08324}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{F7B6A0C1-0BC2-47D1-9239-437C2BB627DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7B6A0C1-0BC2-47D1-9239-437C2BB627DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7B6A0C1-0BC2-47D1-9239-437C2BB627DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D66099-8E75-4484-8754-720C00C08324}.Debug|Any CPU.ActiveCfg = Debug
+		{30D66099-8E75-4484-8754-720C00C08324}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
