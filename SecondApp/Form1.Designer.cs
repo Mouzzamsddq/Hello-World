@@ -34,8 +34,8 @@
             this.tbLastName = new System.Windows.Forms.TextBox();
             this.lbWelcome = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.bnOk = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,6 @@
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tbFirstName
             // 
@@ -93,7 +92,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.btnClear, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.bnOk, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnOk, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 314);
             this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(476, 49);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -101,17 +100,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(476, 49);
             this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // bnOk
-            // 
-            this.bnOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnOk.Location = new System.Drawing.Point(3, 3);
-            this.bnOk.Name = "bnOk";
-            this.bnOk.Size = new System.Drawing.Size(232, 39);
-            this.bnOk.TabIndex = 0;
-            this.bnOk.Text = "OK";
-            this.bnOk.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
@@ -123,6 +111,19 @@
             this.btnClear.TabIndex = 1;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnOk
+            // 
+            this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOk.Location = new System.Drawing.Point(3, 3);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(232, 39);
+            this.btnOk.TabIndex = 0;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // Form1
             // 
@@ -138,6 +139,7 @@
             this.MinimumSize = new System.Drawing.Size(512, 431);
             this.Name = "Form1";
             this.Text = "Welcome App";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,6 +155,6 @@
         private Label lbWelcome;
         private TableLayoutPanel tableLayoutPanel1;
         private Button btnClear;
-        private Button bnOk;
+        private Button btnOk;
     }
 }
